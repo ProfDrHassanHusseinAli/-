@@ -31,3 +31,15 @@ google-services.json
 
 # Android Profiling
 *.hprof
+window.onload = function () {
+  const voice = document.getElementById("welcome-voice");
+  const music = document.getElementById("background-music");
+
+  // شغل الصوت الترحيبي الأول
+  voice.play();
+
+  // بعد انتهاء الصوت، شغل الموسيقى
+  voice.onended = () => {
+    music.play();
+  };
+};
