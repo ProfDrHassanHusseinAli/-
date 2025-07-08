@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Sultan Hussein bot | صاحب المقام الرفيع سمو الشيخ البروفيسور الدكتور حسن حسين علي</title>
+<style>
+  body {
+    background: radial-gradient(circle, black, gold);
+    color: gold;
+    text-align: center;
+    font-family: 'Cairo', sans-serif;
+    font-size: 20px;
+    user-select: none;
+  }
+  .profile-img {
+    border-radius: 50%; width: 170px; height: 170px; margin-top:20px;
+    animation: neon-glow 2s linear infinite;
+    border: 3px solid gold;
+    box-shadow: 0 0 30px #ff0, 0 0 10px #fff;
+  }
+  @keyframes neon-glow {
+    0% { box-shadow: 0 0 10px red; }
+    25% { box-shadow: 0 0 30px orange; }
+    50% { box-shadow: 0 0 30px yellow; }
+    75% { box-shadow: 0 0 30px green; }
+    100% { box-shadow: 0 0 30px blue; }
+  }
+  .news-bar {
+    background: gold; color: black; padding: 5px;
+    white-space: nowrap; overflow: hidden;
+    animation: scroll 20s linear infinite;
+    font-weight: bold;
+    margin-bottom: 15px;
+  }
+  @keyframes scroll {
+    from { transform: translateX(100%); } to { transform: translateX(-100%); }
+  }
+  .buttons a {
+    padding: 10px 15px; margin: 4px; border-radius:5px; color:white; text-decoration:none; display:inline-block;
+    font-weight: bold; font-size: 18px;
+    transition: transform 0.2s, box-shadow 0.2s;
+  }
+  .buttons a:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 10px #fff;
+    filter: brightness(1.2);
+  }
+  .counters div { margin: 5px; font-weight: bold; }
+  #protection-msg {
+    position: fixed; left: 0; right: 0; bottom: 0; background:rgba(0,0,0,0.77); color:gold; font-size:18px; padding:5px; z-index:9999; pointer-events:none;
+    font-family: 'Cairo', sans-serif;
+  }
+</style>
+</head>
+<body>
+<h1>Sultan Hussein bot | صاحب المقام الرفيع سمو الشيخ البروفيسور الدكتور حسن حسين علي</h1>
+<div class="news-bar">موقع البروفيسور الدكتور حسن حسين علي للإستشارات الطبية والصحية… الصحة تاج… النور علم…</div>
+<img src="https://i.postimg.cc/05w238FK/imageedit-0-9524327628.gif" class="profile-img" alt="profile" />
+<div id="clock">الساعة ستظهر هنا</div>
+<div id="date">التاريخ الميلادي سيظهر هنا</div>
+<div id="hijri">التاريخ الهجري سيظهر هنا</div>
+<div class="counters">
+  <div>المتابعين: <span id="followers">18000000</span></div>
+  <div>الإعجابات: <span id="likes">50000</span></div>
+  <div>التعليقات: <span id="comments">10000</span></div>
+  <div>الزائرون الحاليون: <span id="visitors">2000</span></div>
+</div>
+<div>الحكم الطبية: <span id="quote">الصحة تاج على رؤوس الأصحاء لا يراه إلا المرضى</span></div>
+<div>
+  <input type="number" id="weight" placeholder="الوزن (كجم)">
+  <input type="number" id="height" placeholder="الطول (سم)">
+</div>
+<div class="buttons">
+  <a style="background:#3b5998;" href="#">فيسبوك</a>
+  <a style="background:#0084ff;" href="#">ماسنجر</a>
+  <a style="background:#25D366;" href="#">واتساب</a>
+  <a style="background:#0088cc;" href="#">تيليجرام</a>
+  <a style="background:#FF0000;" href="#">يوتيوب</a>
+  <a style="background:#0077B5;" href="#">لينكدإن</a>
+  <a style="background:#BD081C;" href="#">Pinterest</a>
+  <a style="background:#36465D;" href="#">Tumblr</a>
+  <a style="background:#000000;" href="#">تيك توك</a>
+  <a style="background:#FFFC00;color:black;" href="#">سناب شات</a>
+  <a style="background:#C13584;" href="#">انستجرام</a>
+  <a style="background:#D44638;" href="#">Gmail</a>
+  <a style="background:#720E9E;" href="#">Yahoo</a>
+  <a style="background:#EE8208;" href="#">ok.ru</a>
+  <a style="background:black;" href="#">كوريا AI</a>
+  <a style="background:#24292e;" href="#">Copilot</a>
+  <a style="background:#4285F4;" href="#">Gemini</a>
+  <a style="background:green;" href="#">📿 أدعية</a>
+  <a style="background:teal;" href="#">⚕️ طبي</a>
+  <a style="background:red;" href="#">💊 صيدلية</a>
+  <a style="background:purple;" href="#">🎮 ألعاب</a>
+  <a style="background:#4CAF50;" href="tel:+201234567890">📞 اتصال</a>
+</div>
+<audio autoplay loop><source src="https://example.com/soft-music.mp3" type="audio/mpeg"></audio>
+<div id="protection-msg">🚫 جميع الحقوق محفوظة &copy; Sultan Hussein bot | سمو الشيخ البروفيسور الدكتور حسن حسين علي | محمي بالكامل من النسخ أو الاقتباس أو الفتح البرمجي | Korea AI 2025</div>
+<script>
+// كود الحماية وObfuscation للزوار
+(function(){
+  function o(s){return s.split("").reverse().join("");}
+  document.addEventListener("contextmenu",function(e){e.preventDefault();});
+  document.addEventListener("keydown",function(e){
+    if(
+      e.key=="F12"||
+      (e.ctrlKey&&(e.key=="u"||e.key=="s"||e.key=="c"||e.key=="a"||e.key=="p"))||
+      (e.metaKey&&(e.key=="u"||e.key=="s"||e.key=="c"))
+    ) e.preventDefault();
+  });
+  document.addEventListener("dragstart",e=>e.preventDefault());
+  document.addEventListener("selectstart",e=>e.preventDefault());
+  setInterval(function(){
+    if(window.outerWidth - window.innerWidth > 160 ||
+       window.outerHeight - window.innerHeight > 160){
+      document.body.innerHTML = "<h2 style='color:red'>🚫 تم حظر الصفحة لحماية المحتوى</h2>";
+    }
+  }, 1000);
+  setTimeout(function(){
+    for(let i=0;i<5;i++)console.log(o("🔥 يرحب بكم Sultan Hussein bot 🔥 | محمي بالكامل - يمنع الفتح البرمجي 🔥"));
+  },333);
+})();
+function updateCounters(id, step) {
+  let val = localStorage.getItem(id) || document.getElementById(id).textContent;
+  val = parseInt(val) + step;
+  localStorage.setItem(id, val);
+  document.getElementById(id).textContent = val;
+}<!DOCTYPE html>
+<html lang="ar">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Sultan Hussein bot | صاحب المقام الرفيع سمو الشيخ البروفيسور الدكتور حسن حسين علي</title>
+<style>
+  body {
+    background: radial-gradient(circle, black, gold);
+    color: gold;
+    text-align: center;
+    font-family: 'Cairo', sans-serif;
+    font-size: 20px;
+    user-select: none;
+  }
+  .profile-img {
+    border-radius: 50%; width: 170px; height: 170px; margin-top:20px;
+    animation: neon-glow 2s linear infinite;
+    border: 3px solid gold;
+    box-shadow: 0 0 30px #ff0, 0 0 10px #fff;
+  }
+  @keyframes neon-glow {
+    0% { box-shadow: 0 0 10px red; }
+    25% { box-shadow: 0 0 30px orange; }
+    50% { box-shadow: 0 0 30px yellow; }
+    75% { box-shadow: 0 0 30px green; }
+    100% { box-shadow: 0 0 30px blue; }
+  }
+  .news-bar {
+    background: gold; color: black; padding: 5px;
+    white-space: nowrap; overflow: hidden;
+    animation: scroll 20s linear infinite;
+    font-weight: bold;
+    margin-bottom: 15px;
+  }
+  @keyframes scroll {
+    from { transform: translateX(100%); } to { transform: translateX(-100%); }
+  }
+  .buttons a {
+    padding: 10px 15px; margin: 4px; border-radius:5px; color:white; text-decoration:none; display:inline-block;
+    font-weight: bold; font-size: 18px;
+    transition: transform 0.2s, box-shadow 0.2s;
+  }
+  .buttons a:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 10px #fff;
+    filter: brightness(1.2);
+  }
+  .counters div { margin: 5px; font-weight: bold; }
+  #protection-msg {
+    position: fixed; left: 0; right: 0; bottom: 0; background:rgba(0,0,0,0.77); color:gold; font-size:18px; padding:5px; z-index:9999; pointer-events:none;
+    font-family: 'Cairo', sans-serif;
+  }
+</style>
+</head>
+<body>
+<h1>Sultan Hussein bot | صاحب المقام الرفيع سمو الشيخ البروفيسور الدكتور حسن حسين علي</h1>
+<div class="news-bar">موقع البروفيسور الدكتور حسن حسين علي للإستشارات الطبية والصحية… الصحة تاج… النور علم…</div>
+<img src="https://i.postimg.cc/05w238FK/imageedit-0-9524327628.gif" class="profile-img" alt="profile" />
+<div id="clock">الساعة ستظهر هنا</div>
+<div id="date">التاريخ الميلادي سيظهر هنا</div>
+<div id="hijri">التاريخ الهجري سيظهر هنا</div>
+<div class="counters">
+  <div>المتابعين: <span id="followers">18000000</span></div>
+  <div>الإعجابات: <span id="likes">50000</span></div>
+  <div>التعليقات: <span id="comments">10000</span></div>
+  <div>الزائرون الحاليون: <span id="visitors">2000</span></div>
+</div>
+<div>الحكم الطبية: <span id="quote">الصحة تاج على رؤوس الأصحاء لا يراه إلا المرضى</span></div>
+<div>
+  <input type="number" id="weight" placeholder="الوزن (كجم)">
+  <input type="number" id="height" placeholder="الطول (سم)">
+</div>
+<div class="buttons">
+  <a style="background:#3b5998;" href="#">فيسبوك</a>
+  <a style="background:#0084ff;" href="#">ماسنجر</a>
+  <a style="background:#25D366;" href="#">واتساب</a>
+  <a style="background:#0088cc;" href="#">تيليجرام</a>
+  <a style="background:#FF0000;" href="#">يوتيوب</a>
+  <a style="background:#0077B5;" href="#">لينكدإن</a>
+  <a style="background:#BD081C;" href="#">Pinterest</a>
+  <a style="background:#36465D;" href="#">Tumblr</a>
+  <a style="background:#000000;" href="#">تيك توك</a>
+  <a style="background:#FFFC00;color:black;" href="#">سناب شات</a>
+  <a style="background:#C13584;" href="#">انستجرام</a>
+  <a style="background:#D44638;" href="#">Gmail</a>
+  <a style="background:#720E9E;" href="#">Yahoo</a>
+  <a style="background:#EE8208;" href="#">ok.ru</a>
+  <a style="background:black;" href="#">كوريا AI</a>
+  <a style="background:#24292e;" href="#">Copilot</a>
+  <a style="background:#4285F4;" href="#">Gemini</a>
+  <a style="background:green;" href="#">📿 أدعية</a>
+  <a style="background:teal;" href="#">⚕️ طبي</a>
+  <a style="background:red;" href="#">💊 صيدلية</a>
+  <a style="background:purple;" href="#">🎮 ألعاب</a>
+  <a style="background:#4CAF50;" href="tel:+201234567890">📞 اتصال</a>
+</div>
+<audio autoplay loop><source src="https://example.com/soft-music.mp3" type="audio/mpeg"></audio>
+<div id="protection-msg">🚫 جميع الحقوق محفوظة &copy; Sultan Hussein bot | سمو الشيخ البروفيسور الدكتور حسن حسين علي | محمي بالكامل من النسخ أو الاقتباس أو الفتح البرمجي | Korea AI 2025</div>
+<script>
+// كود الحماية وObfuscation للزوار
+(function(){
+  function o(s){return s.split("").reverse().join("");}
+  document.addEventListener("contextmenu",function(e){e.preventDefault();});
+  document.addEventListener("keydown",function(e){
+    if(
+      e.key=="F12"||
+      (e.ctrlKey&&(e.key=="u"||e.key=="s"||e.key=="c"||e.key=="a"||e.key=="p"))||
+      (e.metaKey&&(e.key=="u"||e.key=="s"||e.key=="c"))
+    ) e.preventDefault();
+  });
+  document.addEventListener("dragstart",e=>e.preventDefault());
+  document.addEventListener("selectstart",e=>e.preventDefault());
+  setInterval(function(){
+    if(window.outerWidth - window.innerWidth > 160 ||
+       window.outerHeight - window.innerHeight > 160){
+      document.body.innerHTML = "<h2 style='color:red'>🚫 تم حظر الصفحة لحماية المحتوى</h2>";
+    }
+  }, 1000);
+  setTimeout(function(){
+    for(let i=0;i<5;i++)console.log(o("🔥 يرحب بكم Sultan Hussein bot 🔥 | محمي بالكامل - يمنع الفتح البرمجي 🔥"));
+  },333);
+})();
+function updateCounters(id, step) {
+  let val = localStorage.getItem(id) || document.getElementById(id).textContent;
+  val = parseInt(val) + step;
+  localStorage.setItem(id, val);
+  document.getElementById(id).textContent = val;
+}
+setInterval(()=>{
+  let now = new Date();
+  let options = {hour:'2-digit',minute:'2-digit',second:'2-digit',hour12:false,timeZone:'Africa/Cairo'};
+  document.getElementById("clock").textContent = "التوقيت (القاهرة +24): " + now.toLocaleTimeString('ar-EG',options);
+  document.getElementById("date").textContent = "التاريخ الميلادي: " + now.toLocaleDateString('ar-EG',{timeZone:'Africa/Cairo'});
+  let hijri = new Intl.DateTimeFormat('ar-TN-u-ca-islamic',{day:'numeric',month:'long',year:'numeric'}).format(now);
+  document.getElementById("hijri").textContent = "التاريخ الهجري: " + hijri;
+  updateCounters("followers", Math.floor(Math.random()*10)+1);
+  updateCounters("likes", Math.floor(Math.random()*5)+1);
+  updateCounters("comments", Math.floor(Math.random()*2)+1);
+  updateCounters("visitors", Math.floor(Math.random()*3)+1);
+},1000);
+</script>
+</body>
+</html>
+setInterval(()=>{
+  let now = new Date();
+  let options = {hour:'2-digit',minute:'2-digit',second:'2-digit',hour12:false,timeZone:'Africa/Cairo'};
+  document.getElementById("clock").textContent = "التوقيت (القاهرة +24): " + now.toLocaleTimeString('ar-EG',options);
+  document.getElementById("date").textContent = "التاريخ الميلادي: " + now.toLocaleDateString('ar-EG',{timeZone:'Africa/Cairo'});
+  let hijri = new Intl.DateTimeFormat('ar-TN-u-ca-islamic',{day:'numeric',month:'long',year:'numeric'}).format(now);
+  document.getElementById("hijri").textContent = "التاريخ الهجري: " + hijri;
+  updateCounters("followers", Math.floor(Math.random()*10)+1);
+  updateCounters("likes", Math.floor(Math.random()*5)+1);
+  updateCounters("comments", Math.floor(Math.random()*2)+1);
+  updateCounters("visitors", Math.floor(Math.random()*3)+1);
+},1000);
+</script>
+</body>
+</html>
